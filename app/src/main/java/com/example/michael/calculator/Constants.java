@@ -22,4 +22,21 @@ public class Constants extends AppCompatActivity {
         setResult(Activity.RESULT_OK, resultIntent);
         finish();
     }
+
+    public String constToString(Button b) {
+        switch ((String)b.getText()){
+            case "\u03c0": //pi
+                return "3.141592653589793";
+                break;
+            case "e":
+                return "2.718281828459045";
+                break;
+            case "\u03D5": //phi (golden ratio)
+                return "1.618033988749894";
+                break;
+            case "c":
+                return ""
+            case "G":
+        }
+    }
 }

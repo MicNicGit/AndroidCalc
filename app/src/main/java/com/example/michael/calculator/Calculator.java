@@ -149,7 +149,7 @@ public class Calculator {
                     }
                 case "/":
                     num2 = Double.toString(Double.parseDouble(num1) / Double.parseDouble(num2));
-                    if (num2.substring(num2.length() - 2, num2.length()) == ".0") {
+                    if (num2.substring(num2.length() - 1, num2.length()) == ".0") {
                         num2 = num2.substring(0, num2.length() - 2);
                     }
                     break;
@@ -163,7 +163,9 @@ public class Calculator {
 
     public String inputConst(String c) {
         ifOnAnswer(); //check whether we are looking at a answer
+        if(num1.isEmpty() && onStringOne) {
 
+        }
         //check whether string one is empty and we are on it
             //add const
         //check whether string two is empty and we are on it
